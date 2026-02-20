@@ -4,7 +4,7 @@ Reproducibility scripts for:
 
 > **ADMET-X: A Multi-Engine ADMET Prediction Platform with Prediction Reliability Quantification, Clinical Developability Scoring, and Adverse Outcome Pathway Mapping**
 >
-> Salah A. Alsharif
+> Salah A. Alshehade
 >
 > *Journal of Chemical Information and Modeling* (2026)
 
@@ -21,9 +21,7 @@ admet-x/
 ├── 01_train_models.py              # Script S1: Train RF+GB ensembles on TOX21/ClinTox
 ├── 02_validate_pri_cds.py          # Script S2: Validate PRI and CDS metrics
 ├── 03_case_studies.py              # Script S3: Run case studies (38 reference drugs)
-├── 04_generate_figures.py          # Script S4: Generate manuscript figures 2-4, 6-8
 ├── 05_production_validation.py     # Script S5: Production pipeline validation
-├── generate_fig1_fig5.py           # Generate architecture (Fig 1) and AOP (Fig 5) diagrams
 ├── trained_models/
 │   ├── tox21/
 │   │   ├── checkpoints/            # Trained ensemble model (joblib)
@@ -77,15 +75,7 @@ Runs comprehensive ADMET-X profiling on reference compounds including aspirin, s
 python 03_case_studies.py --models_dir ./trained_models --output_dir ./case_study_results
 ```
 
-### Script S4: Figure Generation (`04_generate_figures.py`)
-
-Generates publication-quality figures 2-4 and 6-8 using matplotlib and seaborn.
-
-```bash
-python 04_generate_figures.py --models_dir ./trained_models --validation_dir ./validation_results --output_dir ./figures
-```
-
-### Script S5: Production Validation (`05_production_validation.py`)
+### Script S4: Production Validation (`05_production_validation.py`)
 
 Validates the production ADMET-X pipeline by running all 38 reference drugs through the live system and comparing outputs against expected values.
 
@@ -102,7 +92,6 @@ scikit-learn >= 1.2
 rdkit >= 2023.03
 deepchem >= 2.5.0
 matplotlib >= 3.7
-seaborn >= 0.12
 pandas >= 2.0
 scipy >= 1.10
 joblib >= 1.2
@@ -111,7 +100,7 @@ joblib >= 1.2
 Install all dependencies:
 
 ```bash
-pip install numpy scikit-learn rdkit deepchem matplotlib seaborn pandas scipy joblib
+pip install numpy scikit-learn rdkit deepchem matplotlib pandas scipy joblib
 ```
 
 ## Trained Models
@@ -141,25 +130,8 @@ python 02_validate_pri_cds.py --models_dir ./trained_models --output_dir ./valid
 # 3. Run case studies
 python 03_case_studies.py --models_dir ./trained_models --output_dir ./case_study_results
 
-# 4. Generate figures
-python 04_generate_figures.py --models_dir ./trained_models --validation_dir ./validation_results --output_dir ./figures
-
-# 5. Validate production pipeline (requires running ADMET-X web application)
+# 4. Validate production pipeline (requires running ADMET-X web application)
 python 05_production_validation.py --output_dir ./production_results
-```
-
-## Citation
-
-If you use ADMET-X or any part of this repository in your research, please cite:
-
-```bibtex
-@article{alsharif2026admetx,
-  title={ADMET-X: A Multi-Engine ADMET Prediction Platform with Prediction Reliability Quantification, Clinical Developability Scoring, and Adverse Outcome Pathway Mapping},
-  author={Alsharif, Salah A.},
-  journal={Journal of Chemical Information and Modeling},
-  year={2026},
-  publisher={American Chemical Society}
-}
 ```
 
 ## License
