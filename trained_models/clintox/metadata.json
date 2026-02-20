@@ -1,0 +1,101 @@
+{
+  "model_type": "sklearn_ensemble",
+  "version": "1.0.0",
+  "training_date": "2026-02-20T15:18:48.448569",
+  "dataset": "clintox",
+  "tasks": [
+    "FDA_APPROVED",
+    "CT_TOX"
+  ],
+  "n_tasks": 2,
+  "fingerprint": {
+    "type": "ECFP4 (Morgan)",
+    "radius": 2,
+    "n_bits": 2048
+  },
+  "split_method": "scaffold (Bemis-Murcko)",
+  "split_ratios": "80/10/10",
+  "rf_params": {
+    "n_estimators": 500,
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "class_weight": "balanced",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "gb_params": {
+    "n_estimators": 200,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "min_samples_split": 5,
+    "random_state": 42
+  },
+  "validation_metrics": {
+    "FDA_APPROVED": {
+      "auc_roc": 0.8227699530516431,
+      "auc_pr": 0.9916183391046789,
+      "accuracy": 0.9594594594594594,
+      "balanced_accuracy": 0.5,
+      "f1": 0.9793103448275862,
+      "mcc": 0.0,
+      "sensitivity": 1.0,
+      "specificity": 0.0,
+      "rf_auc": 0.8485915492957745,
+      "gb_auc": 0.7359154929577465,
+      "n_train": 1184,
+      "n_valid": 148,
+      "positive_rate_train": 0.933277027027027,
+      "positive_rate_valid": 0.9594594594594594
+    },
+    "CT_TOX": {
+      "auc_roc": 0.8419452887537994,
+      "auc_pr": 0.21724386724386724,
+      "accuracy": 0.9527027027027027,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "mcc": 0.0,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "rf_auc": 0.9088145896656534,
+      "gb_auc": 0.6818642350557245,
+      "n_train": 1184,
+      "n_valid": 148,
+      "positive_rate_train": 0.08023648648648649,
+      "positive_rate_valid": 0.0472972972972973
+    }
+  },
+  "test_metrics": {
+    "FDA_APPROVED": {
+      "auc_roc": 0.7545963229416467,
+      "balanced_accuracy": 0.5,
+      "f1": 0.9686411149825784,
+      "mcc": 0.0,
+      "sensitivity": 1.0,
+      "specificity": 0.0,
+      "n_test": 148
+    },
+    "CT_TOX": {
+      "auc_roc": 0.7384057971014493,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "mcc": 0.0,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "n_test": 148
+    }
+  },
+  "auc_roc": 0.8323576209027213,
+  "auc_roc_std": 0.009587667851078119,
+  "test_auc_roc": 0.746501060021548,
+  "test_auc_roc_std": 0.008095262920098711,
+  "per_task_auc": {
+    "FDA_APPROVED": 0.8227699530516431,
+    "CT_TOX": 0.8419452887537994
+  },
+  "per_task_test_auc": {
+    "FDA_APPROVED": 0.7545963229416467,
+    "CT_TOX": 0.7384057971014493
+  }
+}

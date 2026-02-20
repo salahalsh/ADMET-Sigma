@@ -1,0 +1,749 @@
+{
+  "Aspirin": {
+    "name": "Aspirin",
+    "category": "classical_oral_drug",
+    "description": "Non-steroidal anti-inflammatory, COX-1/COX-2 inhibitor",
+    "known_bcs_class": "I",
+    "year_approved": 1899,
+    "physicochemical": {
+      "smiles": "CC(=O)Oc1ccccc1C(=O)O",
+      "mw": 180.16,
+      "logp": 1.31,
+      "tpsa": 63.6,
+      "hbd": 1,
+      "hba": 3,
+      "rotatable_bonds": 2,
+      "aromatic_rings": 1,
+      "rings": 1,
+      "heavy_atoms": 13,
+      "fsp3": 0.111,
+      "qed": 0.55,
+      "num_atoms": 13,
+      "lipinski_violations": 0,
+      "lipinski_details": [],
+      "lipinski_compliant": true
+    },
+    "solubility": {
+      "log_s": -2.39,
+      "solubility_mg_ml": 0.7333,
+      "solubility_class": "High"
+    },
+    "ph_solubility": {
+      "ionizable_groups": [
+        {
+          "group": "carboxylic_acid",
+          "pka": 4.2,
+          "type": "acid"
+        }
+      ],
+      "ph_solubility": {
+        "pH_1.2": -2.39,
+        "pH_4.5": -1.91,
+        "pH_6.8": 0.21,
+        "pH_7.4": 0.81
+      }
+    },
+    "bcs": {
+      "bcs_class": "I",
+      "high_solubility": true,
+      "high_permeability": true,
+      "permeability_score": 1.0,
+      "formulation_recommendation": "Conventional immediate-release tablet; low development risk"
+    },
+    "cds": {
+      "cds_score": 71.5,
+      "cds_category": "Good",
+      "dimensions": {
+        "druglikeness": {
+          "score": 65.2,
+          "weight": 0.2
+        },
+        "metabolic_stability": {
+          "score": 60,
+          "weight": 0.2
+        },
+        "safety": {
+          "score": 65,
+          "weight": 0.25
+        },
+        "permeability": {
+          "score": 90,
+          "weight": 0.15
+        },
+        "physicochemical": {
+          "score": 90,
+          "weight": 0.2
+        }
+      }
+    },
+    "pri": {
+      "pri_score": 0.656,
+      "pri_category": "Moderate",
+      "components": {
+        "applicability_domain": {
+          "score": 0.773,
+          "weight": 0.3
+        },
+        "ensemble_uncertainty": {
+          "score": 0.586,
+          "weight": 0.25
+        },
+        "conformal_prediction": {
+          "score": 0.864,
+          "weight": 0.2
+        },
+        "model_performance": {
+          "score": 0.42,
+          "weight": 0.25
+        }
+      }
+    },
+    "ddi": {
+      "ddi_risk_score": 0,
+      "ddi_risk_category": "Low",
+      "substrate_of": [],
+      "inhibitor_of": [],
+      "victim_drug": false,
+      "perpetrator_drug": false,
+      "clinical_warnings": []
+    },
+    "metabolites": {
+      "predicted_metabolites": [
+        {
+          "reaction": "Aromatic hydroxylation",
+          "enzymes": "CYP1A2/CYP2C9",
+          "priority": 1
+        },
+        {
+          "reaction": "Ester hydrolysis",
+          "enzymes": "CES1/CES2",
+          "priority": 2
+        }
+      ],
+      "n_metabolic_sites": 2,
+      "dili_structural_alerts": [],
+      "dili_alert_count": 0
+    },
+    "aop": {
+      "triggered_aops": [],
+      "n_aops_triggered": 0,
+      "aop_risk_score": 0,
+      "aop_risk_category": "Low"
+    },
+    "bro5": {
+      "compound_class": "ro5_compliant",
+      "ro5_violations": 0,
+      "is_macrocycle": false,
+      "max_ring_size": 6,
+      "chameleonicity_score": 0.0,
+      "bro5_druglikeness_score": 50,
+      "is_protac": false,
+      "e3_recruiter": null,
+      "oral_bioavailability_risk": "Low"
+    },
+    "comparative": {
+      "most_similar": [
+        {
+          "drug": "Warfarin",
+          "tanimoto": 0.245
+        },
+        {
+          "drug": "Acetaminophen",
+          "tanimoto": 0.222
+        },
+        {
+          "drug": "Carbamazepine",
+          "tanimoto": 0.205
+        },
+        {
+          "drug": "Naproxen",
+          "tanimoto": 0.205
+        },
+        {
+          "drug": "Propranolol",
+          "tanimoto": 0.204
+        }
+      ],
+      "max_similarity": 0.245,
+      "most_similar_drug": "Warfarin"
+    }
+  },
+  "Simvastatin": {
+    "name": "Simvastatin",
+    "category": "cyp3a4_victim",
+    "description": "HMG-CoA reductase inhibitor (statin), CYP3A4 substrate",
+    "known_bcs_class": "II",
+    "year_approved": 1991,
+    "physicochemical": {
+      "smiles": "CCC(C)(C)C(=O)OC1CC(O)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21",
+      "mw": 420.55,
+      "logp": 3.31,
+      "tpsa": 93.06,
+      "hbd": 2,
+      "hba": 6,
+      "rotatable_bonds": 6,
+      "aromatic_rings": 0,
+      "rings": 3,
+      "heavy_atoms": 30,
+      "fsp3": 0.75,
+      "qed": 0.641,
+      "num_atoms": 30,
+      "lipinski_violations": 0,
+      "lipinski_details": [],
+      "lipinski_compliant": true
+    },
+    "solubility": {
+      "log_s": -4.14,
+      "solubility_mg_ml": 0.0307,
+      "solubility_class": "Moderate"
+    },
+    "ph_solubility": {
+      "ionizable_groups": [],
+      "ph_solubility": {
+        "pH_1.2": -4.14,
+        "pH_4.5": -4.14,
+        "pH_6.8": -4.14,
+        "pH_7.4": -4.14
+      }
+    },
+    "bcs": {
+      "bcs_class": "II",
+      "high_solubility": false,
+      "high_permeability": true,
+      "permeability_score": 0.9,
+      "formulation_recommendation": "Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)"
+    },
+    "cds": {
+      "cds_score": 66.8,
+      "cds_category": "Good",
+      "dimensions": {
+        "druglikeness": {
+          "score": 70.3,
+          "weight": 0.2
+        },
+        "metabolic_stability": {
+          "score": 50,
+          "weight": 0.2
+        },
+        "safety": {
+          "score": 65,
+          "weight": 0.25
+        },
+        "permeability": {
+          "score": 72,
+          "weight": 0.15
+        },
+        "physicochemical": {
+          "score": 80,
+          "weight": 0.2
+        }
+      }
+    },
+    "pri": {
+      "pri_score": 0.658,
+      "pri_category": "Moderate",
+      "components": {
+        "applicability_domain": {
+          "score": 0.74,
+          "weight": 0.3
+        },
+        "ensemble_uncertainty": {
+          "score": 0.935,
+          "weight": 0.25
+        },
+        "conformal_prediction": {
+          "score": 0.488,
+          "weight": 0.2
+        },
+        "model_performance": {
+          "score": 0.42,
+          "weight": 0.25
+        }
+      }
+    },
+    "ddi": {
+      "ddi_risk_score": 30,
+      "ddi_risk_category": "Moderate",
+      "substrate_of": [
+        "CYP3A4"
+      ],
+      "inhibitor_of": [],
+      "victim_drug": true,
+      "perpetrator_drug": false,
+      "clinical_warnings": [
+        "Potential DDI victim via CYP3A4 -- co-administration with strong inhibitors may increase exposure"
+      ]
+    },
+    "metabolites": {
+      "predicted_metabolites": [
+        {
+          "reaction": "Ester hydrolysis",
+          "enzymes": "CES1/CES2",
+          "priority": 2
+        }
+      ],
+      "n_metabolic_sites": 1,
+      "dili_structural_alerts": [],
+      "dili_alert_count": 0
+    },
+    "aop": {
+      "triggered_aops": [
+        {
+          "aop_id": "AOP:34",
+          "organ": "Hepatic",
+          "mie": "BSEP inhibition",
+          "adverse_outcome": "Cholestasis",
+          "confidence": 0.425,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        },
+        {
+          "aop_id": "AOP:25",
+          "organ": "Hepatic",
+          "mie": "Mitochondrial complex inhibition",
+          "adverse_outcome": "Drug-induced liver injury",
+          "confidence": 0.3,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        }
+      ],
+      "n_aops_triggered": 2,
+      "aop_risk_score": 42,
+      "aop_risk_category": "Moderate"
+    },
+    "bro5": {
+      "compound_class": "ro5_compliant",
+      "ro5_violations": 0,
+      "is_macrocycle": false,
+      "max_ring_size": 6,
+      "chameleonicity_score": 0.1,
+      "bro5_druglikeness_score": 50,
+      "is_protac": false,
+      "e3_recruiter": null,
+      "oral_bioavailability_risk": "Low"
+    },
+    "comparative": {
+      "most_similar": [
+        {
+          "drug": "Pioglitazone",
+          "tanimoto": 0.133
+        },
+        {
+          "drug": "Ibuprofen",
+          "tanimoto": 0.108
+        },
+        {
+          "drug": "Warfarin",
+          "tanimoto": 0.106
+        },
+        {
+          "drug": "Amoxicillin",
+          "tanimoto": 0.106
+        },
+        {
+          "drug": "Naproxen",
+          "tanimoto": 0.103
+        }
+      ],
+      "max_similarity": 0.133,
+      "most_similar_drug": "Pioglitazone"
+    }
+  },
+  "Cyclosporine A": {
+    "name": "Cyclosporine A",
+    "category": "bro5_macrocycle",
+    "description": "Macrocyclic immunosuppressant, beyond Rule-of-5",
+    "known_bcs_class": "IV",
+    "year_approved": 1983,
+    "physicochemical": {
+      "smiles": "CCC1NC(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C(O)C(C)CC=CC)N(C)C(=O)C(C(C)C)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)CC)N(C)C(=O)CN(C)C(=O)C(C(C)C)N(C)C1=O",
+      "mw": 1159.61,
+      "logp": 4.4,
+      "tpsa": 249.7,
+      "hbd": 4,
+      "hba": 11,
+      "rotatable_bonds": 16,
+      "aromatic_rings": 0,
+      "rings": 1,
+      "heavy_atoms": 82,
+      "fsp3": 0.803,
+      "qed": 0.158,
+      "num_atoms": 82,
+      "lipinski_violations": 2,
+      "lipinski_details": [
+        "MW=1159.61 > 500",
+        "HBA=11 > 10"
+      ],
+      "lipinski_compliant": false
+    },
+    "solubility": {
+      "log_s": -8.75,
+      "solubility_mg_ml": 0.0,
+      "solubility_class": "Very Low"
+    },
+    "ph_solubility": {
+      "ionizable_groups": [],
+      "ph_solubility": {
+        "pH_1.2": -8.75,
+        "pH_4.5": -8.75,
+        "pH_6.8": -8.75,
+        "pH_7.4": -8.75
+      }
+    },
+    "bcs": {
+      "bcs_class": "II",
+      "high_solubility": false,
+      "high_permeability": true,
+      "permeability_score": 0.75,
+      "formulation_recommendation": "Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)"
+    },
+    "cds": {
+      "cds_score": 31.9,
+      "cds_category": "Poor",
+      "dimensions": {
+        "druglikeness": {
+          "score": 8.7,
+          "weight": 0.2
+        },
+        "metabolic_stability": {
+          "score": 30,
+          "weight": 0.2
+        },
+        "safety": {
+          "score": 59,
+          "weight": 0.25
+        },
+        "permeability": {
+          "score": 45,
+          "weight": 0.15
+        },
+        "physicochemical": {
+          "score": 10,
+          "weight": 0.2
+        }
+      }
+    },
+    "pri": {
+      "pri_score": 0.514,
+      "pri_category": "Moderate",
+      "components": {
+        "applicability_domain": {
+          "score": 0.486,
+          "weight": 0.3
+        },
+        "ensemble_uncertainty": {
+          "score": 0.509,
+          "weight": 0.25
+        },
+        "conformal_prediction": {
+          "score": 0.679,
+          "weight": 0.2
+        },
+        "model_performance": {
+          "score": 0.42,
+          "weight": 0.25
+        }
+      }
+    },
+    "ddi": {
+      "ddi_risk_score": 15,
+      "ddi_risk_category": "Low",
+      "substrate_of": [],
+      "inhibitor_of": [],
+      "victim_drug": false,
+      "perpetrator_drug": false,
+      "clinical_warnings": []
+    },
+    "metabolites": {
+      "predicted_metabolites": [
+        {
+          "reaction": "N-demethylation",
+          "enzymes": "CYP3A4/CYP2D6",
+          "priority": 1
+        },
+        {
+          "reaction": "N-oxidation",
+          "enzymes": "CYP3A4/FMO3",
+          "priority": 2
+        }
+      ],
+      "n_metabolic_sites": 2,
+      "dili_structural_alerts": [],
+      "dili_alert_count": 0
+    },
+    "aop": {
+      "triggered_aops": [
+        {
+          "aop_id": "AOP:34",
+          "organ": "Hepatic",
+          "mie": "BSEP inhibition",
+          "adverse_outcome": "Cholestasis",
+          "confidence": 0.425,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        },
+        {
+          "aop_id": "AOP:25",
+          "organ": "Hepatic",
+          "mie": "Mitochondrial complex inhibition",
+          "adverse_outcome": "Drug-induced liver injury",
+          "confidence": 0.3,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        }
+      ],
+      "n_aops_triggered": 2,
+      "aop_risk_score": 42,
+      "aop_risk_category": "Moderate"
+    },
+    "bro5": {
+      "compound_class": "bro5_large",
+      "ro5_violations": 2,
+      "is_macrocycle": true,
+      "max_ring_size": 30,
+      "chameleonicity_score": 0.9,
+      "bro5_druglikeness_score": 30,
+      "is_protac": false,
+      "e3_recruiter": null,
+      "oral_bioavailability_risk": "High"
+    },
+    "comparative": {
+      "most_similar": [
+        {
+          "drug": "Pioglitazone",
+          "tanimoto": 0.103
+        },
+        {
+          "drug": "Amoxicillin",
+          "tanimoto": 0.091
+        },
+        {
+          "drug": "Ibuprofen",
+          "tanimoto": 0.089
+        },
+        {
+          "drug": "Losartan",
+          "tanimoto": 0.086
+        },
+        {
+          "drug": "Amlodipine",
+          "tanimoto": 0.078
+        }
+      ],
+      "max_similarity": 0.103,
+      "most_similar_drug": "Pioglitazone"
+    }
+  },
+  "ARV-110": {
+    "name": "ARV-110",
+    "category": "protac",
+    "description": "PROTAC degrader targeting androgen receptor (Arvinas)",
+    "known_bcs_class": "IV",
+    "year_approved": null,
+    "physicochemical": {
+      "smiles": "CC(C)c1cc(NC(=O)COc2ccc(-c3cnc4cc(F)c(OCC5CCN(CC6CC(=O)NC(=O)C6)C5)cc4n3)cc2)ccc1F",
+      "mw": 657.72,
+      "logp": 5.47,
+      "tpsa": 122.75,
+      "hbd": 2,
+      "hba": 8,
+      "rotatable_bonds": 11,
+      "aromatic_rings": 4,
+      "rings": 6,
+      "heavy_atoms": 48,
+      "fsp3": 0.361,
+      "qed": 0.204,
+      "num_atoms": 48,
+      "lipinski_violations": 2,
+      "lipinski_details": [
+        "MW=657.72 > 500",
+        "LogP=5.47 > 5"
+      ],
+      "lipinski_compliant": false
+    },
+    "solubility": {
+      "log_s": -7.13,
+      "solubility_mg_ml": 0.0,
+      "solubility_class": "Very Low"
+    },
+    "ph_solubility": {
+      "ionizable_groups": [
+        {
+          "group": "tertiary_amine",
+          "pka": 8.0,
+          "type": "base"
+        },
+        {
+          "group": "pyridine",
+          "pka": 5.2,
+          "type": "base"
+        }
+      ],
+      "ph_solubility": {
+        "pH_1.2": 3.67,
+        "pH_4.5": -2.85,
+        "pH_6.8": -5.89,
+        "pH_7.4": -6.43
+      }
+    },
+    "bcs": {
+      "bcs_class": "II",
+      "high_solubility": false,
+      "high_permeability": true,
+      "permeability_score": 0.75,
+      "formulation_recommendation": "Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)"
+    },
+    "cds": {
+      "cds_score": 21.2,
+      "cds_category": "Poor",
+      "dimensions": {
+        "druglikeness": {
+          "score": 11.2,
+          "weight": 0.2
+        },
+        "metabolic_stability": {
+          "score": 5,
+          "weight": 0.2
+        },
+        "safety": {
+          "score": 35,
+          "weight": 0.25
+        },
+        "permeability": {
+          "score": 55,
+          "weight": 0.15
+        },
+        "physicochemical": {
+          "score": 10,
+          "weight": 0.2
+        }
+      }
+    },
+    "pri": {
+      "pri_score": 0.643,
+      "pri_category": "Moderate",
+      "components": {
+        "applicability_domain": {
+          "score": 0.618,
+          "weight": 0.3
+        },
+        "ensemble_uncertainty": {
+          "score": 0.813,
+          "weight": 0.25
+        },
+        "conformal_prediction": {
+          "score": 0.747,
+          "weight": 0.2
+        },
+        "model_performance": {
+          "score": 0.42,
+          "weight": 0.25
+        }
+      }
+    },
+    "ddi": {
+      "ddi_risk_score": 35,
+      "ddi_risk_category": "Moderate",
+      "substrate_of": [],
+      "inhibitor_of": [
+        "CYP2D6"
+      ],
+      "victim_drug": false,
+      "perpetrator_drug": true,
+      "clinical_warnings": [
+        "Potential CYP2D6 inhibitor -- may increase exposure of CYP2D6 substrates"
+      ]
+    },
+    "metabolites": {
+      "predicted_metabolites": [
+        {
+          "reaction": "Aromatic hydroxylation",
+          "enzymes": "CYP1A2/CYP2C9",
+          "priority": 1
+        },
+        {
+          "reaction": "N-oxidation",
+          "enzymes": "CYP3A4/FMO3",
+          "priority": 2
+        }
+      ],
+      "n_metabolic_sites": 2,
+      "dili_structural_alerts": [],
+      "dili_alert_count": 0
+    },
+    "aop": {
+      "triggered_aops": [
+        {
+          "aop_id": "AOP:34",
+          "organ": "Hepatic",
+          "mie": "BSEP inhibition",
+          "adverse_outcome": "Cholestasis",
+          "confidence": 0.425,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        },
+        {
+          "aop_id": "AOP:25",
+          "organ": "Hepatic",
+          "mie": "Mitochondrial complex inhibition",
+          "adverse_outcome": "Drug-induced liver injury",
+          "confidence": 0.3,
+          "matching_triggers": [
+            "high_logp"
+          ]
+        }
+      ],
+      "n_aops_triggered": 2,
+      "aop_risk_score": 42,
+      "aop_risk_category": "Moderate"
+    },
+    "bro5": {
+      "compound_class": "bro5_moderate",
+      "ro5_violations": 2,
+      "is_macrocycle": false,
+      "max_ring_size": 6,
+      "chameleonicity_score": 0.2,
+      "bro5_druglikeness_score": 50,
+      "is_protac": true,
+      "e3_recruiter": "glutarimide_crbn",
+      "protac_assessment": {
+        "strengths": [
+          "Multiple rings provide structural rigidity"
+        ],
+        "challenges": []
+      },
+      "oral_bioavailability_risk": "Moderate"
+    },
+    "comparative": {
+      "most_similar": [
+        {
+          "drug": "Imatinib",
+          "tanimoto": 0.194
+        },
+        {
+          "drug": "Pioglitazone",
+          "tanimoto": 0.185
+        },
+        {
+          "drug": "Metoprolol",
+          "tanimoto": 0.167
+        },
+        {
+          "drug": "Naproxen",
+          "tanimoto": 0.155
+        },
+        {
+          "drug": "Omeprazole",
+          "tanimoto": 0.149
+        }
+      ],
+      "max_similarity": 0.194,
+      "most_similar_drug": "Imatinib"
+    }
+  }
+}

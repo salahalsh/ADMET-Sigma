@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.egg-info/
+.env
+.venv/
+
+# Large model checkpoints (regenerate with: python 01_train_models.py)
+*.joblib
+
+# Keep only PDF figures (PNG are large raster duplicates)
+figures/*.png

@@ -1,0 +1,11 @@
+{
+  "approved_n": 25,
+  "withdrawn_n": 13,
+  "approved_median_cds": 69.7,
+  "withdrawn_median_cds": 67.0,
+  "approved_mean_cds": 65.556,
+  "withdrawn_mean_cds": 62.723076923076924,
+  "mann_whitney_U": 215.0,
+  "p_value": 0.05478958191340761,
+  "significant": false
+}

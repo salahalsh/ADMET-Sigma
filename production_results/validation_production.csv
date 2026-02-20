@@ -1,0 +1,39 @@
+name,status,cds_overall,cds_category,cds_drug_likeness,cds_metabolic_stability,cds_safety_profile,cds_permeability,cds_physicochemical,pri_overall,pri_category,pri_ad,pri_ensemble,pri_conformal,pri_model_perf,ddi_risk_score,ddi_risk_category,aop_n_triggered,aop_risk_score,aop_risk_category,bcs_class,withdrawal_reason
+Aspirin,approved,62.5,good,75.0,60.0,55.0,50.0,70.0,0.5606,moderate,0.4,0.8959,0.5578,0.4203,0.0,low,0,0.0,low,I,
+Metformin,approved,60.0,good,75.0,60.0,70.0,50.0,35.0,0.5922,moderate,0.4827,0.9234,0.5573,0.4203,0.0,low,0,0.0,low,III,
+Ibuprofen,approved,65.5,good,75.0,50.0,70.0,55.0,70.0,0.5477,moderate,0.4,0.8601,0.5379,0.4203,13.7,low,3,23.9,low,I,
+Amlodipine,approved,58.2,moderate,75.0,55.0,52.5,45.0,60.0,0.505,moderate,0.2897,0.8512,0.5013,0.4203,17.9,low,3,29.7,moderate,I,
+Metoprolol,approved,67.5,good,75.0,60.0,70.0,55.0,70.0,0.5647,moderate,0.4,0.9099,0.5606,0.4203,5.2,low,0,0.0,low,I,
+Simvastatin,approved,59.5,moderate,75.0,50.0,60.0,45.0,60.0,0.526,moderate,0.3625,0.8287,0.5251,0.4203,10.5,low,4,32.8,moderate,II,
+Losartan,approved,50.6,moderate,74.7,25.0,64.0,45.0,35.0,0.4992,moderate,0.2514,0.8392,0.5444,0.4203,66.5,critical,2,18.4,low,IV,
+Omeprazole,approved,64.0,good,75.0,50.0,60.0,50.0,80.0,0.551,moderate,0.4,0.9168,0.4834,0.4203,41.5,moderate,3,34.0,moderate,I,
+Fluoxetine,approved,55.3,moderate,75.0,35.0,56.0,55.0,55.0,0.5666,moderate,0.4,0.921,0.5563,0.4203,24.9,low,2,18.4,low,II,
+Warfarin,approved,61.0,good,75.0,45.0,60.0,50.0,70.0,0.5466,moderate,0.4,0.8947,0.4891,0.4203,22.0,low,4,37.4,moderate,II,
+Diazepam,approved,63.2,good,75.0,50.0,62.5,55.0,70.0,0.5649,moderate,0.4,0.9169,0.5528,0.4203,22.0,low,3,34.1,high,I,
+Carbamazepine,approved,65.5,good,75.0,50.0,70.0,55.0,70.0,0.5071,moderate,0.2163,0.9077,0.5509,0.4203,32.0,moderate,2,18.4,low,I,
+Acetaminophen,approved,67.5,good,75.0,60.0,70.0,55.0,70.0,0.5649,moderate,0.4,0.9219,0.5469,0.4203,0.0,low,0,0.0,low,I,
+Caffeine,approved,63.0,good,75.0,65.0,70.0,50.0,45.0,0.5573,moderate,0.4,0.9041,0.531,0.4203,33.2,moderate,0,0.0,low,III,
+Propranolol,approved,64.0,good,75.0,55.0,55.0,55.0,80.0,0.5537,moderate,0.4,0.8675,0.5588,0.4203,9.4,low,0,0.0,low,I,
+Amoxicillin,approved,67.5,good,75.0,65.0,70.0,45.0,70.0,0.5654,moderate,0.4,0.9183,0.5538,0.4203,0.0,low,0,0.0,low,III,
+Naproxen,approved,65.5,good,75.0,50.0,70.0,55.0,70.0,0.5646,moderate,0.4,0.9127,0.5568,0.4203,19.9,low,3,23.9,low,I,
+Fluconazole,approved,67.0,good,75.0,60.0,70.0,50.0,70.0,0.5635,moderate,0.4,0.9106,0.5538,0.4203,18.9,low,0,0.0,low,I,
+Gabapentin,approved,67.0,good,75.0,60.0,70.0,50.0,70.0,0.5676,moderate,0.4,0.9226,0.5593,0.4203,0.0,low,0,0.0,low,I,
+Atenolol,approved,66.0,good,75.0,65.0,70.0,50.0,60.0,0.5666,moderate,0.4,0.9174,0.561,0.4203,0.0,low,0,0.0,low,I,
+Pioglitazone,approved,46.9,moderate,75.0,50.0,9.5,50.0,70.0,0.5433,moderate,0.4,0.8841,0.4862,0.4203,21.0,low,6,40.2,moderate,I,
+Tamoxifen,approved,36.4,poor,60.0,20.0,29.5,55.0,30.0,0.5611,moderate,0.4,0.8975,0.5584,0.4203,24.9,low,4,41.7,high,IV,
+Verapamil,approved,35.0,poor,60.0,20.0,40.0,50.0,10.0,0.5674,moderate,0.4,0.9222,0.5587,0.4203,23.9,low,2,18.4,low,IV,
+Imatinib,approved,41.0,moderate,73.7,15.0,31.0,50.0,45.0,0.4866,moderate,0.1718,0.8874,0.5407,0.4203,46.5,moderate,2,18.4,low,IV,
+Phenytoin,approved,69.5,good,75.0,60.0,70.0,55.0,80.0,0.5675,moderate,0.4,0.925,0.5559,0.4203,8.4,low,0,0.0,low,I,
+Troglitazone,withdrawn,48.7,moderate,74.9,40.0,39.0,50.0,45.0,0.4923,moderate,0.235,0.8408,0.5326,0.4203,23.9,low,2,18.4,low,IV,Hepatotoxicity
+Rofecoxib,withdrawn,62.6,good,75.0,55.0,52.0,50.0,80.0,0.4992,moderate,0.2147,0.8829,0.5453,0.4203,9.4,low,2,21.5,low,I,Cardiovascular
+Valdecoxib,withdrawn,62.1,good,75.0,45.0,57.0,50.0,80.0,0.523,moderate,0.2831,0.894,0.5475,0.4203,11.5,low,0,0.0,low,II,Cardiovascular/Skin
+Tegaserod,withdrawn,60.4,good,75.0,45.0,58.0,50.0,70.0,0.4797,moderate,0.1871,0.8378,0.5451,0.4203,41.5,moderate,2,18.4,low,II,Cardiovascular
+Sibutramine,withdrawn,64.5,good,75.0,45.0,70.0,55.0,70.0,0.5339,moderate,0.2996,0.9136,0.5525,0.4203,15.8,low,2,18.4,low,I,Cardiovascular
+Rosiglitazone,withdrawn,55.0,moderate,75.0,50.0,30.0,50.0,80.0,0.5093,moderate,0.2642,0.8694,0.5383,0.4203,10.5,low,0,0.0,low,I,Cardiovascular
+Cisapride,withdrawn,58.0,moderate,75.0,50.0,55.0,45.0,60.0,0.5058,moderate,0.2286,0.8912,0.547,0.4203,17.9,low,0,0.0,low,I,QT prolongation
+Terfenadine,withdrawn,30.0,poor,39.6,15.0,32.0,55.0,20.0,0.5291,moderate,0.2956,0.8993,0.5526,0.4203,24.9,low,2,18.4,low,IV,QT prolongation
+Nefazodone,withdrawn,54.1,moderate,74.8,40.0,52.0,55.0,50.0,0.5108,moderate,0.2524,0.8878,0.5402,0.4203,41.6,moderate,2,18.4,low,II,Hepatotoxicity
+Bromfenac,withdrawn,60.5,good,75.0,50.0,55.0,50.0,70.0,0.4927,moderate,0.2177,0.8614,0.5348,0.4203,19.9,low,4,32.5,moderate,II,Hepatotoxicity
+Benoxaprofen,withdrawn,57.2,moderate,75.0,35.0,64.0,50.0,55.0,0.5031,moderate,0.2307,0.8796,0.5444,0.4203,27.0,low,3,23.9,low,IV,Hepatotoxicity/Phototox
+Pemoline,withdrawn,66.0,good,75.0,65.0,70.0,50.0,60.0,0.4936,moderate,0.2007,0.8907,0.5281,0.4203,0.0,low,0,0.0,low,I,Hepatotoxicity
+Dexfenfluramine,withdrawn,64.5,good,75.0,45.0,70.0,55.0,70.0,0.5093,moderate,0.2125,0.9183,0.5545,0.4203,15.8,low,2,18.4,low,I,Cardiac valvulopathy

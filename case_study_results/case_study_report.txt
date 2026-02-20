@@ -1,0 +1,320 @@
+================================================================================
+ADMET-X CASE STUDY REPORT
+Generated: 2026-02-20T15:51:43.230285
+================================================================================
+
+================================================================================
+COMPOUND: Aspirin
+Description: Non-steroidal anti-inflammatory, COX-1/COX-2 inhibitor
+SMILES: CC(=O)Oc1ccccc1C(=O)O
+================================================================================
+
+--- Physicochemical Properties ---
+  MW:               180.16 Da
+  LogP:             1.31
+  TPSA:             63.6 A^2
+  HBD / HBA:        1 / 3
+  Rotatable bonds:  2
+  Aromatic rings:   1
+  Fsp3:             0.111
+  QED:              0.55
+  Lipinski:         0 violations (COMPLIANT)
+
+--- BCS Classification ---
+  Predicted class:  I (Known: I)
+  Solubility:       High (logS=-2.39)
+  Permeability:     High (score=1.0)
+  Formulation:      Conventional immediate-release tablet; low development risk
+
+--- pH-Dependent Solubility ---
+  pH_1.2: logS = -2.39
+  pH_4.5: logS = -1.91
+  pH_6.8: logS = 0.21
+  pH_7.4: logS = 0.81
+  Ionizable: carboxylic_acid (pKa=4.2, acid)
+
+--- Clinical Developability Score ---
+  CDS:              71.5/100 (Good)
+    druglikeness               65.2  (weight=0.2)
+    metabolic_stability        60.0  (weight=0.2)
+    safety                     65.0  (weight=0.25)
+    permeability               90.0  (weight=0.15)
+    physicochemical            90.0  (weight=0.2)
+
+--- Prediction Reliability Index ---
+  PRI:              0.656 (Moderate)
+    applicability_domain      0.773  (weight=0.3)
+    ensemble_uncertainty      0.586  (weight=0.25)
+    conformal_prediction      0.864  (weight=0.2)
+    model_performance         0.420  (weight=0.25)
+
+--- Drug-Drug Interaction Assessment ---
+  DDI Risk Score:   0/100 (Low)
+  Substrate of:     None identified
+  Inhibitor of:     None identified
+  Victim drug:      No
+  Perpetrator drug: No
+
+--- Phase I Metabolite Prediction ---
+  Metabolic sites:  2
+    [1] Aromatic hydroxylation (CYP1A2/CYP2C9)
+    [2] Ester hydrolysis (CES1/CES2)
+
+--- Adverse Outcome Pathway Mapping ---
+  AOPs triggered:   0
+  AOP Risk Score:   0 (Low)
+
+--- Beyond-Rule-of-5 / PROTAC Assessment ---
+  Compound class:   ro5_compliant
+  Macrocycle:        No (max ring: 6 atoms)
+  Chameleonicity:   0.0
+  bRo5 score:       50
+  Oral risk:        Low
+
+--- Comparative Drug Profiling ---
+  Most similar:     Warfarin (Tanimoto=0.245)
+  Top 5 matches:
+    Warfarin              Tanimoto=0.245
+    Acetaminophen         Tanimoto=0.222
+    Carbamazepine         Tanimoto=0.205
+    Naproxen              Tanimoto=0.205
+    Propranolol           Tanimoto=0.204
+
+================================================================================
+COMPOUND: Simvastatin
+Description: HMG-CoA reductase inhibitor (statin), CYP3A4 substrate
+SMILES: CCC(C)(C)C(=O)OC1CC(O)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21
+================================================================================
+
+--- Physicochemical Properties ---
+  MW:               420.55 Da
+  LogP:             3.31
+  TPSA:             93.06 A^2
+  HBD / HBA:        2 / 6
+  Rotatable bonds:  6
+  Aromatic rings:   0
+  Fsp3:             0.75
+  QED:              0.641
+  Lipinski:         0 violations (COMPLIANT)
+
+--- BCS Classification ---
+  Predicted class:  II (Known: II)
+  Solubility:       Low (logS=-4.14)
+  Permeability:     High (score=0.9)
+  Formulation:      Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)
+
+--- pH-Dependent Solubility ---
+  pH_1.2: logS = -4.14
+  pH_4.5: logS = -4.14
+  pH_6.8: logS = -4.14
+  pH_7.4: logS = -4.14
+
+--- Clinical Developability Score ---
+  CDS:              66.8/100 (Good)
+    druglikeness               70.3  (weight=0.2)
+    metabolic_stability        50.0  (weight=0.2)
+    safety                     65.0  (weight=0.25)
+    permeability               72.0  (weight=0.15)
+    physicochemical            80.0  (weight=0.2)
+
+--- Prediction Reliability Index ---
+  PRI:              0.658 (Moderate)
+    applicability_domain      0.740  (weight=0.3)
+    ensemble_uncertainty      0.935  (weight=0.25)
+    conformal_prediction      0.488  (weight=0.2)
+    model_performance         0.420  (weight=0.25)
+
+--- Drug-Drug Interaction Assessment ---
+  DDI Risk Score:   30/100 (Moderate)
+  Substrate of:     CYP3A4
+  Inhibitor of:     None identified
+  Victim drug:      Yes
+  Perpetrator drug: No
+  ! Potential DDI victim via CYP3A4 -- co-administration with strong inhibitors may increase exposure
+
+--- Phase I Metabolite Prediction ---
+  Metabolic sites:  1
+    [2] Ester hydrolysis (CES1/CES2)
+
+--- Adverse Outcome Pathway Mapping ---
+  AOPs triggered:   2
+  AOP Risk Score:   42 (Moderate)
+    AOP:34: Cholestasis [Hepatic] (confidence=0.425)
+    AOP:25: Drug-induced liver injury [Hepatic] (confidence=0.3)
+
+--- Beyond-Rule-of-5 / PROTAC Assessment ---
+  Compound class:   ro5_compliant
+  Macrocycle:        No (max ring: 6 atoms)
+  Chameleonicity:   0.1
+  bRo5 score:       50
+  Oral risk:        Low
+
+--- Comparative Drug Profiling ---
+  Most similar:     Pioglitazone (Tanimoto=0.133)
+  Top 5 matches:
+    Pioglitazone          Tanimoto=0.133
+    Ibuprofen             Tanimoto=0.108
+    Warfarin              Tanimoto=0.106
+    Amoxicillin           Tanimoto=0.106
+    Naproxen              Tanimoto=0.103
+
+================================================================================
+COMPOUND: Cyclosporine A
+Description: Macrocyclic immunosuppressant, beyond Rule-of-5
+SMILES: CCC1NC(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C(O)C(C)CC=CC)N(C)C(=O)C(C(C)C)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)CC)N(C)C(=O)CN(C)C(=O)C(C(C)C)N(C)C1=O
+================================================================================
+
+--- Physicochemical Properties ---
+  MW:               1159.61 Da
+  LogP:             4.4
+  TPSA:             249.7 A^2
+  HBD / HBA:        4 / 11
+  Rotatable bonds:  16
+  Aromatic rings:   0
+  Fsp3:             0.803
+  QED:              0.158
+  Lipinski:         2 violations (NON-COMPLIANT)
+
+--- BCS Classification ---
+  Predicted class:  II (Known: IV)
+  Solubility:       Low (logS=-8.75)
+  Permeability:     High (score=0.75)
+  Formulation:      Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)
+
+--- pH-Dependent Solubility ---
+  pH_1.2: logS = -8.75
+  pH_4.5: logS = -8.75
+  pH_6.8: logS = -8.75
+  pH_7.4: logS = -8.75
+
+--- Clinical Developability Score ---
+  CDS:              31.9/100 (Poor)
+    druglikeness                8.7  (weight=0.2)
+    metabolic_stability        30.0  (weight=0.2)
+    safety                     59.0  (weight=0.25)
+    permeability               45.0  (weight=0.15)
+    physicochemical            10.0  (weight=0.2)
+
+--- Prediction Reliability Index ---
+  PRI:              0.514 (Moderate)
+    applicability_domain      0.486  (weight=0.3)
+    ensemble_uncertainty      0.509  (weight=0.25)
+    conformal_prediction      0.679  (weight=0.2)
+    model_performance         0.420  (weight=0.25)
+
+--- Drug-Drug Interaction Assessment ---
+  DDI Risk Score:   15/100 (Low)
+  Substrate of:     None identified
+  Inhibitor of:     None identified
+  Victim drug:      No
+  Perpetrator drug: No
+
+--- Phase I Metabolite Prediction ---
+  Metabolic sites:  2
+    [1] N-demethylation (CYP3A4/CYP2D6)
+    [2] N-oxidation (CYP3A4/FMO3)
+
+--- Adverse Outcome Pathway Mapping ---
+  AOPs triggered:   2
+  AOP Risk Score:   42 (Moderate)
+    AOP:34: Cholestasis [Hepatic] (confidence=0.425)
+    AOP:25: Drug-induced liver injury [Hepatic] (confidence=0.3)
+
+--- Beyond-Rule-of-5 / PROTAC Assessment ---
+  Compound class:   bro5_large
+  Macrocycle:        Yes (max ring: 30 atoms)
+  Chameleonicity:   0.9
+  bRo5 score:       30
+  Oral risk:        High
+
+--- Comparative Drug Profiling ---
+  Most similar:     Pioglitazone (Tanimoto=0.103)
+  Top 5 matches:
+    Pioglitazone          Tanimoto=0.103
+    Amoxicillin           Tanimoto=0.091
+    Ibuprofen             Tanimoto=0.089
+    Losartan              Tanimoto=0.086
+    Amlodipine            Tanimoto=0.078
+
+================================================================================
+COMPOUND: ARV-110
+Description: PROTAC degrader targeting androgen receptor (Arvinas)
+SMILES: CC(C)c1cc(NC(=O)COc2ccc(-c3cnc4cc(F)c(OCC5CCN(CC6CC(=O)NC(=O)C6)C5)cc4n3)cc2)ccc1F
+================================================================================
+
+--- Physicochemical Properties ---
+  MW:               657.72 Da
+  LogP:             5.47
+  TPSA:             122.75 A^2
+  HBD / HBA:        2 / 8
+  Rotatable bonds:  11
+  Aromatic rings:   4
+  Fsp3:             0.361
+  QED:              0.204
+  Lipinski:         2 violations (NON-COMPLIANT)
+
+--- BCS Classification ---
+  Predicted class:  II (Known: IV)
+  Solubility:       Low (logS=-7.13)
+  Permeability:     High (score=0.75)
+  Formulation:      Solubility-enhancing formulation recommended: amorphous solid dispersion (PVP-VA, Soluplus), nanocrystal, or lipid-based system (SEDDS/SMEDDS)
+
+--- pH-Dependent Solubility ---
+  pH_1.2: logS = 3.67
+  pH_4.5: logS = -2.85
+  pH_6.8: logS = -5.89
+  pH_7.4: logS = -6.43
+  Ionizable: tertiary_amine (pKa=8.0, base)
+  Ionizable: pyridine (pKa=5.2, base)
+
+--- Clinical Developability Score ---
+  CDS:              21.2/100 (Poor)
+    druglikeness               11.2  (weight=0.2)
+    metabolic_stability         5.0  (weight=0.2)
+    safety                     35.0  (weight=0.25)
+    permeability               55.0  (weight=0.15)
+    physicochemical            10.0  (weight=0.2)
+
+--- Prediction Reliability Index ---
+  PRI:              0.643 (Moderate)
+    applicability_domain      0.618  (weight=0.3)
+    ensemble_uncertainty      0.813  (weight=0.25)
+    conformal_prediction      0.747  (weight=0.2)
+    model_performance         0.420  (weight=0.25)
+
+--- Drug-Drug Interaction Assessment ---
+  DDI Risk Score:   35/100 (Moderate)
+  Substrate of:     None identified
+  Inhibitor of:     CYP2D6
+  Victim drug:      No
+  Perpetrator drug: Yes
+  ! Potential CYP2D6 inhibitor -- may increase exposure of CYP2D6 substrates
+
+--- Phase I Metabolite Prediction ---
+  Metabolic sites:  2
+    [1] Aromatic hydroxylation (CYP1A2/CYP2C9)
+    [2] N-oxidation (CYP3A4/FMO3)
+
+--- Adverse Outcome Pathway Mapping ---
+  AOPs triggered:   2
+  AOP Risk Score:   42 (Moderate)
+    AOP:34: Cholestasis [Hepatic] (confidence=0.425)
+    AOP:25: Drug-induced liver injury [Hepatic] (confidence=0.3)
+
+--- Beyond-Rule-of-5 / PROTAC Assessment ---
+  Compound class:   bro5_moderate
+  Macrocycle:        No (max ring: 6 atoms)
+  Chameleonicity:   0.2
+  bRo5 score:       50
+  Oral risk:        Moderate
+  PROTAC:           Yes (E3=glutarimide_crbn)
+    + Multiple rings provide structural rigidity
+
+--- Comparative Drug Profiling ---
+  Most similar:     Imatinib (Tanimoto=0.194)
+  Top 5 matches:
+    Imatinib              Tanimoto=0.194
+    Pioglitazone          Tanimoto=0.185
+    Metoprolol            Tanimoto=0.167
+    Naproxen              Tanimoto=0.155
+    Omeprazole            Tanimoto=0.149

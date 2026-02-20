@@ -1,0 +1,194 @@
+{
+  "Aspirin": {
+    "cds": {
+      "cds_overall": 62.5,
+      "cds_category": "good",
+      "cds_drug_likeness": 75.0,
+      "cds_metabolic_stability": 60.0,
+      "cds_safety_profile": 55.0,
+      "cds_permeability": 50.0,
+      "cds_physicochemical": 70.0
+    },
+    "pri": {
+      "pri_overall": 0.5606,
+      "pri_category": "moderate",
+      "pri_ad": 0.4,
+      "pri_ensemble": 0.8959,
+      "pri_conformal": 0.5578,
+      "pri_model_perf": 0.4203
+    },
+    "ddi": {
+      "ddi_risk_score": 0.0,
+      "ddi_risk_category": "low",
+      "ddi_n_cyp_interactions": 0
+    },
+    "aop": {
+      "aop_n_triggered": 0,
+      "aop_risk_score": 0.0,
+      "aop_risk_category": "low"
+    },
+    "bcs": {
+      "bcs_class": "I",
+      "bcs_solubility": "high",
+      "bcs_permeability": "high"
+    },
+    "bro5": {
+      "compound_class": "ro5_compliant",
+      "chameleonicity": null,
+      "ro5_violations": 0,
+      "is_macrocycle": false
+    },
+    "comparative": {
+      "most_similar_drug": "Warfarin",
+      "most_similar_score": 0.245
+    },
+    "mw": 180.159,
+    "logp": 1.31,
+    "tpsa": 63.6,
+    "prediction_engine": "RDKit + Trained ML Models"
+  },
+  "Simvastatin": {
+    "cds": {
+      "cds_overall": 59.5,
+      "cds_category": "moderate",
+      "cds_drug_likeness": 75.0,
+      "cds_metabolic_stability": 50.0,
+      "cds_safety_profile": 60.0,
+      "cds_permeability": 45.0,
+      "cds_physicochemical": 60.0
+    },
+    "pri": {
+      "pri_overall": 0.526,
+      "pri_category": "moderate",
+      "pri_ad": 0.3625,
+      "pri_ensemble": 0.8287,
+      "pri_conformal": 0.5251,
+      "pri_model_perf": 0.4203
+    },
+    "ddi": {
+      "ddi_risk_score": 10.5,
+      "ddi_risk_category": "low",
+      "ddi_n_cyp_interactions": 1
+    },
+    "aop": {
+      "aop_n_triggered": 4,
+      "aop_risk_score": 32.8,
+      "aop_risk_category": "moderate"
+    },
+    "bcs": {
+      "bcs_class": "II",
+      "bcs_solubility": "low",
+      "bcs_permeability": "high"
+    },
+    "bro5": {
+      "compound_class": "ro5_compliant",
+      "chameleonicity": null,
+      "ro5_violations": 0,
+      "is_macrocycle": false
+    },
+    "comparative": {
+      "most_similar_drug": "Pioglitazone",
+      "most_similar_score": 0.133
+    },
+    "mw": 420.546,
+    "logp": 3.31,
+    "tpsa": 93.06,
+    "prediction_engine": "RDKit + Trained ML Models"
+  },
+  "Cyclosporine A": {
+    "cds": {
+      "cds_overall": 30.8,
+      "cds_category": "poor",
+      "cds_drug_likeness": 35.6,
+      "cds_metabolic_stability": 30.0,
+      "cds_safety_profile": 49.0,
+      "cds_permeability": 30.0,
+      "cds_physicochemical": 0
+    },
+    "pri": {
+      "pri_overall": 0.4711,
+      "pri_category": "moderate",
+      "pri_ad": 0.1286,
+      "pri_ensemble": 0.8676,
+      "pri_conformal": 0.5529,
+      "pri_model_perf": 0.4203
+    },
+    "ddi": {
+      "ddi_risk_score": 37.1,
+      "ddi_risk_category": "moderate",
+      "ddi_n_cyp_interactions": 2
+    },
+    "aop": {
+      "aop_n_triggered": 2,
+      "aop_risk_score": 18.4,
+      "aop_risk_category": "low"
+    },
+    "bcs": {
+      "bcs_class": "IV",
+      "bcs_solubility": "low",
+      "bcs_permeability": "low"
+    },
+    "bro5": {
+      "compound_class": "protac_like",
+      "chameleonicity": 0.759,
+      "ro5_violations": 2,
+      "is_macrocycle": true
+    },
+    "comparative": {
+      "most_similar_drug": "Mycophenolate mofetil",
+      "most_similar_score": 0.108
+    },
+    "mw": 1159.61,
+    "logp": 4.4,
+    "tpsa": 249.7,
+    "prediction_engine": "RDKit + Trained ML Models"
+  },
+  "ARV-110": {
+    "cds": {
+      "cds_overall": 24.9,
+      "cds_category": "poor",
+      "cds_drug_likeness": 37.0,
+      "cds_metabolic_stability": 5.0,
+      "cds_safety_profile": 40.0,
+      "cds_permeability": 45.0,
+      "cds_physicochemical": 0
+    },
+    "pri": {
+      "pri_overall": 0.466,
+      "pri_category": "moderate",
+      "pri_ad": 0.1667,
+      "pri_ensemble": 0.8194,
+      "pri_conformal": 0.5305,
+      "pri_model_perf": 0.4203
+    },
+    "ddi": {
+      "ddi_risk_score": 56.5,
+      "ddi_risk_category": "moderate",
+      "ddi_n_cyp_interactions": 5
+    },
+    "aop": {
+      "aop_n_triggered": 2,
+      "aop_risk_score": 18.4,
+      "aop_risk_category": "low"
+    },
+    "bcs": {
+      "bcs_class": "IV",
+      "bcs_solubility": "low",
+      "bcs_permeability": "low"
+    },
+    "bro5": {
+      "compound_class": "bro5_small",
+      "chameleonicity": 0.626,
+      "ro5_violations": 2,
+      "is_macrocycle": false
+    },
+    "comparative": {
+      "most_similar_drug": "Imatinib",
+      "most_similar_score": 0.194
+    },
+    "mw": 657.718,
+    "logp": 5.469,
+    "tpsa": 122.75,
+    "prediction_engine": "RDKit + Trained ML Models"
+  }
+}

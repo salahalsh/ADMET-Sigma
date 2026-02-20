@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-02-20T17:35:08.885736",
+  "engine_availability": {
+    "RDKIT": true,
+    "PKCM": true,
+    "ML": true,
+    "MULTI": true,
+    "TRAINED_ML": true,
+    "CONSENSUS_SCORING": true,
+    "APPLICABILITY_DOMAIN": true,
+    "UNCERTAINTY": true,
+    "SHAP": true
+  },
+  "n_approved": 25,
+  "n_withdrawn": 13,
+  "cds_approved_median": 63.2,
+  "cds_approved_mean": 59.56400000000001,
+  "cds_approved_std": 9.92890896993891,
+  "cds_withdrawn_median": 60.4,
+  "cds_withdrawn_mean": 57.20000000000001,
+  "cds_withdrawn_std": 9.51095859171584,
+  "mann_whitney_U": 211.5,
+  "p_value": 0.06768085555726858,
+  "cohens_d": 0.24143205707765095,
+  "pri_mean": 0.5353394736842104,
+  "pri_std": 0.030986959240279582,
+  "pri_high_pct": 0.0,
+  "pri_moderate_pct": 100.0,
+  "pri_low_pct": 0.0,
+  "pri_unreliable_pct": 0.0
+}
