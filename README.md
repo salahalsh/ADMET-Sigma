@@ -6,7 +6,6 @@ Reproducibility scripts for:
 >
 > Salah A. Alshehade
 >
-> *Journal of Chemical Information and Modeling* (2026)
 
 ## Overview
 
