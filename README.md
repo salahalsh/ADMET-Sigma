@@ -1,22 +1,22 @@
-# ADMET-X: Supplementary Scripts and Data
+# ADMET-Σ: Supplementary Scripts and Data
 
 Reproducibility scripts for:
 
-> **ADMET-X: A Multi-Engine ADMET Prediction Platform with Prediction Reliability Quantification, Clinical Developability Scoring, and Adverse Outcome Pathway Mapping**
+> **ADMET-Σ: A Multi-Engine ADMET Prediction Platform with Prediction Reliability Quantification, Clinical Developability Scoring, and Adverse Outcome Pathway Mapping**
 >
 > Salah A. Alshehade
 >
 
 ## Overview
 
-ADMET-X integrates three prediction tiers (RDKit rule-based, Deep-PK deep learning, and locally trained ML ensembles) with ten translational feature modules into a unified ADMET prediction platform that generates ~250 properties per compound.
+ADMET-Σ integrates three prediction tiers (RDKit rule-based, Deep-PK deep learning, and locally trained ML ensembles) with ten translational feature modules into a unified ADMET prediction platform that generates ~250 properties per compound.
 
 **Web application:** [https://insilicosigma.com/](https://insilicosigma.com/)
 
 ## Repository Structure
 
 ```
-admet-x/
+ADMET-Sigma/
 ├── 01_train_models.py              # Script S1: Train RF+GB ensembles on TOX21/ClinTox
 ├── 02_validate_pri_cds.py          # Script S2: Validate PRI and CDS metrics
 ├── 03_case_studies.py              # Script S3: Run case studies (38 reference drugs)
@@ -68,7 +68,7 @@ python 02_validate_pri_cds.py --models_dir ./trained_models --output_dir ./valid
 
 ### Script S3: Case Studies (`03_case_studies.py`)
 
-Runs comprehensive ADMET-X profiling on reference compounds including aspirin, simvastatin, and troglitazone. Generates all case study data reported in the manuscript.
+Runs comprehensive ADMET-Σ profiling on reference compounds including aspirin, simvastatin, and troglitazone. Generates all case study data reported in the manuscript.
 
 ```bash
 python 03_case_studies.py --models_dir ./trained_models --output_dir ./case_study_results
@@ -76,7 +76,7 @@ python 03_case_studies.py --models_dir ./trained_models --output_dir ./case_stud
 
 ### Script S4: Production Validation (`05_production_validation.py`)
 
-Validates the production ADMET-X pipeline by running all 38 reference drugs through the live system and comparing outputs against expected values.
+Validates the production ADMET-Σ pipeline by running all 38 reference drugs through the live system and comparing outputs against expected values.
 
 ```bash
 python 05_production_validation.py --output_dir ./production_results
@@ -129,7 +129,7 @@ python 02_validate_pri_cds.py --models_dir ./trained_models --output_dir ./valid
 # 3. Run case studies
 python 03_case_studies.py --models_dir ./trained_models --output_dir ./case_study_results
 
-# 4. Validate production pipeline (requires running ADMET-X web application)
+# 4. Validate production pipeline (requires running ADMET-Σ web application)
 python 05_production_validation.py --output_dir ./production_results
 ```
 

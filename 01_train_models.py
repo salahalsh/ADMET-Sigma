@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-ADMET-X Model Training Script
+ADMET-Σ Model Training Script
 ==============================
-Supplementary Script S1 for: "ADMET-X: A Multi-Engine ADMET Prediction Platform
+Supplementary Script S1 for: "ADMET-Σ: A Multi-Engine ADMET Prediction Platform
 with Prediction Reliability Quantification, Clinical Developability Scoring,
 and Adverse Outcome Pathway Mapping"
 
@@ -372,7 +372,7 @@ def train_dataset(dataset_name, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='ADMET-X Model Training Script'
+        description='ADMET-Σ Model Training Script'
     )
     parser.add_argument(
         '--output_dir', type=str, default='./trained_models',

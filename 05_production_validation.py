@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-ADMET-X Production Validation Script
+ADMET-Σ Production Validation Script
 ======================================
 Runs all case study and validation compounds through the actual production
-ADMET-X aggregator to ensure paper numbers match tool output.
+ADMET-Σ aggregator to ensure paper numbers match tool output.
 
 This script imports the real ADMETAggregator from the Django project and
 runs compounds with engine='RDKIT' (which adds Trained ML, enhanced features).
 
 Usage:
     cd "D:/myTools/Tool - InsilicoX Project/insilicox_web_app"
-    python "C:/Users/salah/Downloads/ADMET-X paper/scripts/05_production_validation.py"
+    python "C:/Users/salah/Downloads/ADMET-Sigma paper/scripts/05_production_validation.py"
 """
 
 import os
@@ -31,7 +31,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'insilicox.settings')
 import django
 django.setup()
 
-# Now safe to import ADMET-X services
+# Now safe to import ADMET-Σ services
 from admet_x.services import ADMETAggregator
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -212,11 +212,11 @@ def run_compound(agg, name, smiles):
 
 
 def main():
-    output_dir = Path(r"C:\Users\salah\Downloads\ADMET-X paper\scripts\production_results")
+    output_dir = Path(r"C:\Users\salah\Downloads\ADMET-Sigma paper\scripts\production_results")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     logger.info("=" * 70)
-    logger.info("ADMET-X Production Validation")
+    logger.info("ADMET-Σ Production Validation")
     logger.info("=" * 70)
 
     # Initialize aggregator

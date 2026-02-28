@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-ADMET-X Validation Script: PRI Calibration & CDS Validation
+ADMET-Σ Validation Script: PRI Calibration & CDS Validation
 =============================================================
-Supplementary Script S2 for: "ADMET-X: A Multi-Engine ADMET Prediction Platform..."
+Supplementary Script S2 for: "ADMET-Σ: A Multi-Engine ADMET Prediction Platform..."
 
 Validates two key novel metrics:
   1. PRI (Prediction Reliability Index) -- calibration analysis
@@ -566,7 +566,7 @@ def validate_pri(output_dir):
 # ============================================================================
 
 def main():
-    parser = argparse.ArgumentParser(description='ADMET-X Validation Script')
+    parser = argparse.ArgumentParser(description='ADMET-Σ Validation Script')
     parser.add_argument('--output_dir', type=str, default='./validation_results')
     parser.add_argument('--models_dir', type=str, default='./trained_models')
     args = parser.parse_args()

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-ADMET-X Case Study Generation Script
+ADMET-Σ Case Study Generation Script
 ======================================
-Supplementary Script S3 for: "ADMET-X: A Multi-Engine ADMET Prediction Platform
+Supplementary Script S3 for: "ADMET-Σ: A Multi-Engine ADMET Prediction Platform
 with Prediction Reliability Quantification, Clinical Developability Scoring,
 and Adverse Outcome Pathway Mapping"
 
 Generates comprehensive ADMET profiles for four case study compounds
 (aspirin, simvastatin, cyclosporine A, ARV-110) using standalone
-implementations of ADMET-X's core modules.
+implementations of ADMET-Σ's core modules.
 
 Requirements:
     pip install rdkit scikit-learn numpy pandas scipy
@@ -1012,7 +1012,7 @@ def comparative_profiling(smiles, reference_drugs):
 # ============================================================================
 
 def generate_profile(name, compound_info, reference_drugs):
-    """Generate complete ADMET-X profile for a compound."""
+    """Generate complete ADMET-Σ profile for a compound."""
     smiles = compound_info["smiles"]
     logger.info(f"\n{'=' * 60}")
     logger.info(f"Profiling: {name}")
@@ -1120,7 +1120,7 @@ def generate_report(profiles, output_dir):
     """Generate text report for paper supplementary material."""
     report_lines = []
     report_lines.append("=" * 80)
-    report_lines.append("ADMET-X CASE STUDY REPORT")
+    report_lines.append("ADMET-Σ CASE STUDY REPORT")
     report_lines.append(f"Generated: {datetime.now().isoformat()}")
     report_lines.append("=" * 80)
 
@@ -1247,7 +1247,7 @@ def generate_report(profiles, output_dir):
 # ============================================================================
 
 def main():
-    parser = argparse.ArgumentParser(description="ADMET-X Case Study Generation")
+    parser = argparse.ArgumentParser(description="ADMET-Σ Case Study Generation")
     parser.add_argument("--output_dir", type=str, default="./case_study_results")
     args = parser.parse_args()
 
