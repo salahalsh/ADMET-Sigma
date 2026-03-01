@@ -11,7 +11,7 @@ Reproducibility scripts for:
 
 ADMET-Σ integrates three prediction tiers (RDKit rule-based, Deep-PK deep learning, and locally trained ML ensembles) with ten translational feature modules into a unified ADMET prediction platform that generates ~250 properties per compound.
 
-**Web application:** [https://insilicosigma.com/](https://insilicosigma.com/)
+**Web application:** [https://insilicosigma.com/admet-sigma/](https://insilicosigma.com/admet-sigma/)
 
 ## Repository Structure
 
